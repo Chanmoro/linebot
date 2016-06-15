@@ -1,0 +1,25 @@
+{
+  "log4js": {
+    "appenders": [{
+      "category": "access",
+      "type": "dateFile",
+      "filename": "logs/access.log",
+      "pattern": "-yyyy-MM-dd",
+      "backups": 3
+    },
+    {
+        "category": "application",
+        "type": "dateFile",
+        "filename": "logs/application.log",
+        "pattern": "-yyyy-MM-dd",
+        "backups": 3
+    },
+    {
+      "type": "console"
+    }],
+    "levels": {
+      "access": "ALL",
+      "application": "ALL"
+    }
+  }
+}
