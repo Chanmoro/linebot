@@ -33,10 +33,11 @@ def on_open(ws):
 
 # dialog and action
 scenario = []
-scenario.append({'msg': ['hello'], 'res': ['hi'], 'action': 'debug'})
 scenario.append({'msg': ['hi'], 'res': ['hi\nwhat\'s up?']})
+scenario.append({'msg': ['こんにちは'], 'res': ['こんにちは！\n調子はどうですか？'], 'action': 'debug'})
 scenario.append({'msg': ['how', 'are', 'you'],
                  'res': ['not bad\nhow about you?']})
+scenario.append({'msg': ['もうかりまっか'], 'res': ['ぼちぼちでんな'], 'action': 'debug'})
 
 random_response = ['oh', 'good', 'uh-huh', 'right', 'I see']
 
